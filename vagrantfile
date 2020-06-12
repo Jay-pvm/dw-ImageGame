@@ -1,0 +1,6 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "nghiaht/nodejs"
+
+    # Shared folder
+    config.vm.synced_folder "code", "/vagrant", create: true
+end
